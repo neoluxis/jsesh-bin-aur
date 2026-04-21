@@ -1,0 +1,8 @@
+#!/bin/bash
+
+set -euo pipefail
+
+appdir='/opt/jsesh/7.11'
+
+cd "${appdir}"
+exec /usr/lib/jvm/java-21-openjdk/bin/java -jar lib/jseshAppli-7.11.jar "$@"

@@ -1,0 +1,16 @@
+pkgbase = jsesh-bin
+	pkgdesc = Hieroglyphic text editor packaged from the upstream JSesh binary release
+	pkgver = 7.11
+	pkgrel = 1
+	url = https://github.com/rosmord/jsesh
+	arch = any
+	license = custom:unknown
+	makedepends = unzip
+	depends = jre21-openjdk
+	noextract = JSesh-7.11.zip
+	source = https://github.com/rosmord/jsesh/releases/download/release-7.11/JSesh-7.11.zip
+	source = jsesh
+	sha256sums = SKIP
+	sha256sums = 618b985c21380ac91af6df947b34a056595f32f1539974d70c65a4b1a4aa1f66
+
+pkgname = jsesh-bin

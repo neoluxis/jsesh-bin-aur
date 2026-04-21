@@ -1,0 +1,7 @@
+.codex/
+src/
+pkg/
+*.pkg.tar.*
+*.src.tar.*
+*.log
+JSesh-7.11.zip
