@@ -1,10 +1,12 @@
+# Maintainer: Neolux Lee <aur.neolux@neolux.cn.eu.org>
+
 pkgname=jsesh-bin
 pkgver=7.11
 pkgrel=1
 pkgdesc="Hieroglyphic text editor packaged from the upstream JSesh binary release"
 arch=('any')
 url='https://github.com/rosmord/jsesh'
-license=('custom:unknown')
+license=('custom:CeCILL' 'custom:jsesh-fonts')
 depends=('jre21-openjdk')
 makedepends=('unzip')
 source=(
@@ -26,4 +28,6 @@ package() {
   cp -a "JSesh-${pkgver}/." "${pkgdir}/opt/jsesh/${pkgver}/"
 
   install -Dm755 "jsesh" "${pkgdir}/usr/bin/jsesh"
+  install -Dm644 "JSesh-${pkgver}/LICENSE.txt" "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE.txt"
+  install -Dm644 "JSesh-${pkgver}/FONT-LICENSE.md" "${pkgdir}/usr/share/licenses/${pkgname}/FONT-LICENSE.md"
 }
