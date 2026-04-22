@@ -12,11 +12,15 @@ makedepends=('unzip')
 source=(
   "https://github.com/rosmord/jsesh/releases/download/release-${pkgver}/JSesh-${pkgver}.zip"
   'jsesh'
+  'jsesh.desktop'
+  'jsesh-icon.png::https://jsesh.qenherkhopeshef.org/user/pages/01.home/logo.png'
 )
 noextract=("JSesh-${pkgver}.zip")
 sha256sums=(
   'SKIP'
-  '618b985c21380ac91af6df947b34a056595f32f1539974d70c65a4b1a4aa1f66'
+  'SKIP'
+  'SKIP'
+  'SKIP'
 )
 
 package() {
@@ -30,4 +34,8 @@ package() {
   install -Dm755 "jsesh" "${pkgdir}/usr/bin/jsesh"
   install -Dm644 "JSesh-${pkgver}/LICENSE.txt" "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE.txt"
   install -Dm644 "JSesh-${pkgver}/FONT-LICENSE.md" "${pkgdir}/usr/share/licenses/${pkgname}/FONT-LICENSE.md"
+  install -Dm644 "${srcdir}/jsesh.desktop" "${pkgdir}/usr/share/applications/jsesh.desktop"
+  install -Dm644 "${srcdir}/jsesh.desktop" "${pkgdir}/usr/share/applications/jsesh.desktop"
+  install -Dm644 "${srcdir}/jsesh-icon.png" "${pkgdir}/usr/share/icons/hicolor/48x48/apps/jsesh.png"
+  install -Dm644 "${srcdir}/jsesh-icon.png" "${pkgdir}/usr/share/icons/hicolor/256x256/apps/jsesh.png"
 }

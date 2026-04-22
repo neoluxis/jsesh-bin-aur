@@ -11,7 +11,11 @@ pkgbase = jsesh-bin
 	noextract = JSesh-7.11.zip
 	source = https://github.com/rosmord/jsesh/releases/download/release-7.11/JSesh-7.11.zip
 	source = jsesh
+	source = jsesh.desktop
+	source = jsesh-icon.png::https://jsesh.qenherkhopeshef.org/user/pages/01.home/logo.png
 	sha256sums = SKIP
-	sha256sums = 618b985c21380ac91af6df947b34a056595f32f1539974d70c65a4b1a4aa1f66
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = SKIP
 
 pkgname = jsesh-bin
