@@ -2,7 +2,7 @@
 
 pkgname=jsesh-bin
 pkgver=7.11
-pkgrel=1
+pkgrel=2
 pkgdesc="Hieroglyphic text editor packaged from the upstream JSesh binary release"
 arch=('any')
 url='https://github.com/rosmord/jsesh'

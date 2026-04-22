@@ -1,7 +1,7 @@
 pkgbase = jsesh-bin
 	pkgdesc = Hieroglyphic text editor packaged from the upstream JSesh binary release
 	pkgver = 7.11
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/rosmord/jsesh
 	arch = any
 	license = custom:CeCILL
